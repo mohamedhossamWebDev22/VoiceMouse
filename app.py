@@ -1,3 +1,4 @@
+import os
 import speech_recognition as sr
 import pyautogui
 
@@ -31,6 +32,10 @@ while True:
             pyautogui.move(-50, 0)
         elif txt == 'go right':
             pyautogui.move(50, 0)
+        elif txt == 'lumos':#Harry potter
+            os.system('color 70')
+        elif txt == 'nox' or txt == 'Knox':#Harry potter
+            os.system('color 07')
     except sr.UnknownValueError:
         print("Could not understand audio")
     except sr.RequestError as e:
